@@ -30,19 +30,19 @@ NOTICE: These samples are only used to assist the explanation and are copyrighte
 1. iOS uses an AI-based algorithm to detect the subject. It may be the same algorithm for subject selection in Photos (when you long press), but the confidence bar is certainly higher. 
 > Example: [CSM-Power/original](https://www.pixiv.net/en/artworks/87469406), Photos is able to detect the subject but Depth Effect is disabled.
 
-1. Another criterion to enable Depth Effect may be the size of the subject. If the subject overlaps a lot with the clock even if the image is zoomed out, the option does not show.
+2. Another criterion to enable Depth Effect may be the size of the subject. If the subject overlaps a lot with the clock even if the image is zoomed out, the option does not show.
 > Example: [CSM-Power/Power-Lock-Screen.jpg](CSM-Power/Power-Lock-Screen.jpg) works. But with its margin cropped, it no longer works.
 
-1. Natural photos seem to work better than images like illustrations. 
+3. Natural photos seem to work better than images like illustrations. 
 > Maybe Apple trains the algorithm mostly on shot photos.
 
-1. Red/pink backgrounds seem to be worse than blue/green ones. 
+4. Red/pink backgrounds seem to be worse than blue/green ones. 
 > Maybe because natural images tend to have sky/natural scenes as the backgrounds.
 
-1. Noise in the background negatively affects the detection algorithm.
+5. Noise in the background negatively affects the detection algorithm.
 > I once added artificial noise to the background of [CSM-Power/Power-Lock-Screen.jpg](CSM-Power/Power-Lock-Screen.jpg), and suddenly it stopped working. Also, the main step that makes [SG-Kurisu/Kurisu-Lock-Screen.jpg](SG-Kurisu/Kurisu-Lock-Screen.jpg) work was manually selecting the background and denoising + Gaussian blurring.
 
-1. Too much artificial brightness/saturation difference between foreground and background may break the algorithm.
+6. Too much artificial brightness/saturation difference between foreground and background may break the algorithm.
 > Happened once when I applied filters on the subject in [SG-Kurisu/Kurisu-Lock-Screen.jpg](SG-Kurisu/Kurisu-Lock-Screen.jpg). Had to undo it.
 
 
